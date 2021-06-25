@@ -51,6 +51,7 @@ body {
     font: 400 1rem var(--body-font);
     color: var(--text-color);
     background: var(--body-color);
+    -webkit-font-smoothing: antialiased;
 }
 
 /* scroll bar */
@@ -300,6 +301,7 @@ nav.show div.icon-close { /* ao clicar no icone, o menu e o botão close aparece
     position: absolute;
     top: -16.8%;
     left: 16.7%;
+    z-index: 0;
 }
 
 #home .img img {
@@ -310,7 +312,7 @@ nav.show div.icon-close { /* ao clicar no icone, o menu e o botão close aparece
 
 #home .img img,
 #home .img::before {
-    border-radius: .3rem;
+    border-radius: .25rem;
 }
 
 #home .text {
@@ -331,30 +333,34 @@ nav.show div.icon-close { /* ao clicar no icone, o menu e o botão close aparece
     background:white;
 }
 
+#about .container {
+    margin: 0;
+}
+
 #about .img {
     position: relative;
 }
 
 #about .img::before {
     content: '';
-    height: 100%;
+    height: 90%;
     width: 100%;
     background: var(--base-color-second);
 
     position: absolute;
-    top: -8.3%;
-    left: -33%;
+    top: -15.5%;
+    left: -25%;
+    z-index: 0;
 }
 
 #about .img img {
     position: relative;
-    width: 100%;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.616);
 }
 
 #about .img img,
 #about .img::before {
-    border-radius: .3rem;
+    border-radius: .25rem;
 }
 
 #about .text {
@@ -575,6 +581,11 @@ footer .social a:hover {
         height: 3.125rem;
     }
 
+    /* layout =========================== */
+    main {
+        margin-top: var(--header-height);
+    }
+
     /* navbar =========================== */
     nav .menu {
         opacity: 1;
@@ -601,10 +612,7 @@ footer .social a:hover {
         display: none;
     }
 
-    /* layout =========================== */
-    main {
-        margin-top: var(--header-height);
-    }
+    
 
     /* home =========================== */
     #home .container {

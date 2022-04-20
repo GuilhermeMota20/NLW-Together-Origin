@@ -26,10 +26,6 @@ Essa é uma landing page desenvolvida durante um evento da Roketseat chamado NLW
 
 Você pode visualizar o layout do projeto através <a href="https://www.figma.com/file/bycoYMxAu8QEdJkyTnWIpu/Origin-Six?node-id=0%3A1">desse link</a>. Lembrando que você precisa ter uma conta no Figma para acessá-lo.
 
-<br>
-
----
-
 ## Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
